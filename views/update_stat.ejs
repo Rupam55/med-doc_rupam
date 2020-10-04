@@ -1,0 +1,67 @@
+<%- include('profileheader') %>
+
+<div class="main navside" style="margin-top: 4%">
+  <div class="row" style="padding: 100px 20px">
+    <div class="col-lg-4 col-md-3 col-1"></div>
+
+    <div
+      class="col-lg-4 col-md-6 col-10 container"
+      style="background-color: white; opacity: 0.92; padding: 40px"
+    >
+      <h1 style="padding: 0 0 0 20px">Update Details</h1>
+      <br />
+      <!-- Makes POST request to /login route -->
+      <form action="/profile/update_stat" method="POST">
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="blood_oxy"
+            placeholder="blood oxygen level"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="blood_press"
+            placeholder="blood pressure level"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="sugar"
+            placeholder="blood sugar level"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="thyroid"
+            placeholder="TSH:"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="bekar"
+            placeholder="PSA"
+          />
+        </div>
+        <button style="margin-left: 25px" type="submit" class="btn btn-dark">
+          submit
+        </button>
+      </form>
+
+      <!-- </div>
+      </div> -->
+    </div>
+    <div class="col-lg-4 col-md-3 col-1"></div>
+  </div>
+</div>
+
+<%- include('footer') %>
